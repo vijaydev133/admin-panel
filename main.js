@@ -10,8 +10,8 @@ let a = document.getElementById("a")
 // let samppass = "pass"
 
 let arr = [
-    {u_Name: "Vijay", rollNo: 14785, gender: "Male", password: "vijay@123", email: "sankarvj1999@gmail.com"},
-    {u_Name: "Mohana", rollNo: 14786, gender: "Female", password: "mohana@123", email: "mohana1999@gmail.com"}
+    {u_Name: "Vijay", password: "vijay@123", email: "sankarvj1999@gmail.com"},
+    {u_Name: "Mohan", password: "mohan@123", email: "mohan1999@gmail.com"}
 ]
 
 let isCorrect = false

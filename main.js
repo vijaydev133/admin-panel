@@ -5,24 +5,48 @@ let pass = document.getElementById("pass");
 let a = document.getElementById("a")
 
 
-let sampuname = "uname";
+// let sampuname = "uname";
 
-let samppass = "pass"
+// let samppass = "pass"
+
+let arr = [
+    {u_Name: "Vijay", rollNo: 14785, gender: "Male", password: "vijay@123", email: "sankarvj1999@gmail.com"},
+    {u_Name: "Mohana", rollNo: 14786, gender: "Female", password: "mohana@123", email: "mohana1999@gmail.com"}
+]
+
+let isCorrect = false
+
 
 function newpage(){
-    let u_name = uName.value;
-
-    let u_pass = pass.value
-
-    if(u_name != "" && u_pass != ""){
-        if(u_name == "uname" && u_pass == "pass"){
+    for(let i = 0 ; i < arr.length; i++){
+        if(arr[i].u_Name == uName.value && arr[i].password == pass.value){
+           
+            isCorrect = true
+        }
+    
+    }
+    if(isCorrect){
             a.href = "/home.html"
-        }
-        else{
-            alert("please type valid usename and password")
-        }
     }
     else{
-        alert("please enter username and password")
+        alert("please enter valid username and password")
     }
 }
+
+// function newpage(){
+//     let u_name = uName.value;
+
+//     let u_pass = pass.value
+
+//     if(u_name != "" && u_pass != ""){
+//         if(u_name == "uname" && u_pass == "pass"){
+//             a.href = "/home.html"
+//         }
+//         else{
+//             alert("please type valid usename and password")
+//         }
+//     }
+//     else{
+//         alert("please enter username and password")
+//     }
+// }
